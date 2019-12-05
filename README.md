@@ -29,9 +29,13 @@ How to add AppMedic web-shell to spring boot application:
 
 
 Note 'deploy_with_debugger.sh' illustates how the v3 api is needed to push an app to cloud foundry that uses a sidecar
+
 cf v3-create-app
+
 cf v3-apply-manifest
+
 cf v3-push
+
 
 Then the 'addAppDebuggerRoute.sh' script is used to expose the secondard port/route and restage the app.
 
