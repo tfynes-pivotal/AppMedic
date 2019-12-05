@@ -2,9 +2,9 @@ applications:
 - name: appmedictest
   memory: 2GB
   routes:
-  - route: appmedictest.homelab.fynesy.com
-  env:
-    debugger_password: foo
+  - route: appmedictest.cfapps.io
+#  env:
+#    debugger_password: pcfpass
   sidecars:
   - name: debugger
     process_types: [web]
