@@ -21,7 +21,9 @@ package your application for deployment to cloud foundry (e.g. mvn package)
 'deploy_with_debugger.sh' script illustates commands to push application with sidecar
 
 'addAppDebuggerRoute.sh' script uses the 'cf curl' command to add an additional port to an appliation and an additional route to expose it externally
+'''
 addAppDebuggerRoute.sh <AppName> <AppDebuggerHostname> <CloudFoundrySpace> <CloudFoundryRouteDomain>
+'''
 
 
 Note 'deploy_with_debugger.sh' illustates how the v3 api is needed to push an app to cloud foundry that uses a sidecar
