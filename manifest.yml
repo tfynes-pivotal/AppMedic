@@ -1,0 +1,12 @@
+applications:
+- name: appmedictest
+  memory: 2GB
+  routes:
+  - route: appmedictest.homelab.fynesy.com
+  env:
+    debugger_password: foo
+  sidecars:
+  - name: debugger
+    process_types: [web]
+    command: 'exec /home/vcap/app/BOOT-INF/classes/static/extract_launch_debugger.sh'
+    memory: 512MB
