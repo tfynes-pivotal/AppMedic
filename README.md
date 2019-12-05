@@ -39,4 +39,5 @@ cf v3-push
 
 Then the 'addAppDebuggerRoute.sh' script is used to expose the secondard port/route and restage the app.
 
+Note the default user/pass for the webshell pcfuser/pcfpass can have password updated by setting "debugger_password" in application manifest env section.
 
