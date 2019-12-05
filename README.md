@@ -12,18 +12,20 @@ which comprises of shellinabox daemon and haproxy facade for basic-auth
 
 How to add AppMedic web-shell to spring boot application:
 
-copy 'pcfshell_debugger_buildpack_offline.zip' and 'extract_launch_debugger.sh' to your <app>/src/main/resources/static folder
+	copy 'pcfshell_debugger_buildpack_offline.zip' and 'extract_launch_debugger.sh' to your <app>/src/main/resources/static folder
 
-package your application for deployment to cloud foundry (e.g. mvn package)
+	package your application for deployment to cloud foundry (e.g. mvn package)
 
-'manifest.yml' defines app manifest with sidecar definition
+	'manifest.yml' defines app manifest with sidecar definition
 
-'deploy_with_debugger.sh' script illustates commands to push application with sidecar
+	'deploy_with_debugger.sh' script illustates commands to push application with sidecar
 
-'addAppDebuggerRoute.sh' script uses the 'cf curl' command to add an additional port to an appliation and an additional route to expose it externally
-'''
-addAppDebuggerRoute.sh <AppName> <AppDebuggerHostname> <CloudFoundrySpace> <CloudFoundryRouteDomain>
-'''
+	'addAppDebuggerRoute.sh' script uses the 'cf curl' command to add an additional port to an appliation and an additional route to expose it externally
+
+
+	
+	addAppDebuggerRoute.sh AppName AppDebuggerHostname CloudFoundrySpace CloudFoundryRouteDomain
+
 
 
 Note 'deploy_with_debugger.sh' illustates how the v3 api is needed to push an app to cloud foundry that uses a sidecar
